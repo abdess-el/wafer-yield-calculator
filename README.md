@@ -4,7 +4,7 @@ A simple web tool to calculate semiconductor manufacturing yield using Murphy's 
 
 ## Live Demo
 
-[(https://abdess-el.github.io/wafer-yield-calculator/)/]
+[https://abdess-el.github.io/wafer-yield-calculator/]
 
 ## Formula
 
