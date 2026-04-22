@@ -1,0 +1,106 @@
+
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Courier New', 'Times New Roman', monospace;
+            background: white;
+            color: black;
+            padding: 30px;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            border: 1px solid black;
+            padding: 20px;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .header h1 {
+            font-size: 1.8rem;
+            font-weight: normal;
+            letter-spacing: 1px;
+        }
+
+        hr {
+            border: none;
+            border-top: 1px solid black;
+            margin: 15px 0;
+        }
+
+        .input-section {
+            margin: 20px 0;
+        }
+
+        .input-group {
+            margin-bottom: 15px;
+        }
+
+        label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        input[type="range"] {
+            width: 70%;
+            margin-right: 10px;
+            -webkit-appearance: none;
+            background: white;
+            border: 1px solid black;
+            height: 4px;
+        }
+
+        input[type="range"]::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            width: 12px;
+            height: 12px;
+            background: black;
+            border: 1px solid black;
+            cursor: pointer;
+        }
+
+        .value {
+            font-weight: bold;
+            font-family: monospace;
+        }
+
+        .results-section {
+            border: 1px solid black;
+            padding: 15px;
+            margin: 20px 0;
+        }
+
+        .result {
+            margin: 5px 0;
+        }
+
+        .visualization {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        #waferCanvas {
+            border: 2px solid black;
+            background: #e0e0e0;
+        }
+
+        .formula-box {
+            font-size: 0.9rem;
+            text-align: center;
+        }
+
+        .footer {
+            text-align: center;
+            font-size: 0.8rem;
+            margin-top: 20px;
+        }

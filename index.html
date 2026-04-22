@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wafer Yield Calculator - Semiconductor Manufacturing Tool</title>
+    
+</head>
+<body>
+
+    <div class="container">
+        <div class="header">
+            <h1>Wafer Yield Calculator</h1>
+            <p>Semiconductor Manufacturing - Murphy's Yield Model</p >
+            <hr>
+        </div>
+
+        <div class="input-section">
+            <div class="input-group">
+                <label> Defect Density (D) - defects/cm²:</label>
+                <input type="range" id="defectDensity" min="0" max="2" step="0.01" value="0.5">
+                <span id="defectValue" class="value">0.50</span>
+            </div>
+
+            <div class="input-group">
+                <label> Die Area (A) - mm²:</label>
+                <input type="range" id="dieArea" min="0.5" max="50" step="0.5" value="10">
+                <span id="areaValue" class="value">10.0</span>
+            </div>
+        </div>
+
+        <div class="results-section">
+            <div class="result">
+                <strong> Yield:</strong> <span id="yieldResult">---</span>
+            </div>
+            <div class="result">
+                <strong> Good Dies:</strong> <span id="goodDies">---</span>
+            </div>
+            <div class="result">
+                <strong> Bad Dies:</strong> <span id="badDies">---</span>
+            </div>
+        </div>
+
+        <div class="visualization">
+            <canvas id="waferCanvas" width="200" height="200"></canvas>
+            <p>🔴 Red dots = defects | ⚪ Gray circle = wafer</p >
+        </div>
+
+        <div class="formula-box">
+            <hr>
+            <p><strong> Murphy's Model:</strong> Yield = (1 - e<sup>(-D × A_cm²)</sup>) / (D × A_cm²)</p >
+            <p>D = Defect Density (defects/cm²) | A_cm² = Die Area (converted from mm² to cm²)</p >
+            <hr>
+        </div>
+
+        <div class="footer">
+            <p>Copyright (c) 2026 EL OMARY ABDESSAMAD.</p >
+        </div>
+    </div>
+<script src="javascript/javascript.js"></script>
+
+</body>
+</html>
